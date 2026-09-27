@@ -1,0 +1,4 @@
+/dist/
+/internal/assets/agents/rcm-*
+*.test
+coverage.out

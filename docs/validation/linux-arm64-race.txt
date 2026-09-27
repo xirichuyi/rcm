@@ -1,0 +1,72 @@
+?   	rcm/cmd/rcm	[no test files]
+?   	rcm/internal/assets	[no test files]
+=== RUN   TestCLIWithSSHShim
+--- PASS: TestCLIWithSSHShim (2.06s)
+PASS
+ok  	rcm/internal/cli	3.079s
+=== RUN   TestPathsAndSymlinks
+--- PASS: TestPathsAndSymlinks (0.00s)
+=== RUN   TestProtocol
+--- PASS: TestProtocol (0.00s)
+=== RUN   TestIgnore
+--- PASS: TestIgnore (0.01s)
+=== RUN   TestApplyPreservesConflictAndHistory
+--- PASS: TestApplyPreservesConflictAndHistory (0.01s)
+=== RUN   TestIntegrationCRUDAndLoop
+--- PASS: TestIntegrationCRUDAndLoop (1.63s)
+=== RUN   TestBurstCoalesce
+--- PASS: TestBurstCoalesce (0.80s)
+=== RUN   TestDisconnectReconcileAndConflict
+--- PASS: TestDisconnectReconcileAndConflict (1.27s)
+=== RUN   TestLargeStreaming
+=== RUN   TestLargeStreaming/10485760
+=== RUN   TestLargeStreaming/104857600
+--- PASS: TestLargeStreaming (2.94s)
+    --- PASS: TestLargeStreaming/10485760 (0.22s)
+    --- PASS: TestLargeStreaming/104857600 (2.72s)
+=== RUN   TestConflictDecisionTable
+=== RUN   TestConflictDecisionTable/remote_only
+=== RUN   TestConflictDecisionTable/local_only
+=== RUN   TestConflictDecisionTable/both
+=== RUN   TestConflictDecisionTable/equal
+=== RUN   TestConflictDecisionTable/delete_modify
+=== RUN   TestConflictDecisionTable/local_delete_remote_modify
+=== RUN   TestConflictDecisionTable/new_collision
+--- PASS: TestConflictDecisionTable (0.05s)
+    --- PASS: TestConflictDecisionTable/remote_only (0.01s)
+    --- PASS: TestConflictDecisionTable/local_only (0.00s)
+    --- PASS: TestConflictDecisionTable/both (0.01s)
+    --- PASS: TestConflictDecisionTable/equal (0.00s)
+    --- PASS: TestConflictDecisionTable/delete_modify (0.01s)
+    --- PASS: TestConflictDecisionTable/local_delete_remote_modify (0.01s)
+    --- PASS: TestConflictDecisionTable/new_collision (0.01s)
+=== RUN   TestCrashRecoveryAndNoClobber
+--- PASS: TestCrashRecoveryAndNoClobber (0.02s)
+=== RUN   TestReadOnlyAndGitNeverUpload
+--- PASS: TestReadOnlyAndGitNeverUpload (0.49s)
+=== RUN   TestRemoteResolutionAndStaleChoice
+--- PASS: TestRemoteResolutionAndStaleChoice (1.09s)
+=== RUN   TestSimulatedRTT300ms
+    mirror_test.go:606: 10 KiB, simulated 300ms RTT: 290.36232ms
+    mirror_test.go:606: 500 KiB, simulated 300ms RTT: 205.1494ms
+--- PASS: TestSimulatedRTT300ms (1.83s)
+=== RUN   TestLargeReceiveBoundedAllocation
+    mirror_test.go:637: 100MiB body: allocated 0.13 MiB
+--- PASS: TestLargeReceiveBoundedAllocation (0.78s)
+=== RUN   TestScale20000
+    mirror_test.go:645: set RCM_SCALE_TEST=1 for 20,000-file integration
+--- SKIP: TestScale20000 (0.00s)
+=== RUN   TestDisconnectDuringBody
+--- PASS: TestDisconnectDuringBody (0.24s)
+=== RUN   TestOnlineSimultaneousConflict
+--- PASS: TestOnlineSimultaneousConflict (0.19s)
+=== RUN   TestCorruptPersistedPathsRejected
+--- PASS: TestCorruptPersistedPathsRejected (0.01s)
+PASS
+ok  	rcm/internal/mirror	12.373s
+=== RUN   TestTargetAndQuoting
+--- PASS: TestTargetAndQuoting (0.01s)
+=== RUN   TestAgentDeploymentThroughSSH
+--- PASS: TestAgentDeploymentThroughSSH (0.04s)
+PASS
+ok  	rcm/internal/transport	1.063s

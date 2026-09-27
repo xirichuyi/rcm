@@ -1,0 +1,7 @@
+=== RUN   TestScale20000
+    mirror_test.go:660: 20,000 files + 100 directories: initial sync 1m1.48374416s
+    mirror_test.go:668: first update during initial catch-up in 20k tree: 106.12124ms
+    mirror_test.go:673: steady-state update in 20k tree: 176.0078ms
+--- PASS: TestScale20000 (63.55s)
+PASS
+ok  	rcm/internal/mirror	63.560s
